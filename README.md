@@ -1,4 +1,4 @@
-#amb-utils
+# amb-utils
 
 Small FreeDOS utilities for Mateusz Viste's AMB ([Ancient Machine Book](http://amb.osdn.io/)) e-book format.
 
@@ -6,7 +6,7 @@ Small FreeDOS utilities for Mateusz Viste's AMB ([Ancient Machine Book](http://a
 
 ------------------------------------------------------
 
-##Ambrary
+## Ambrary
 (AMB library, geddit?)  
 Written in QuickBASIC 4.5 for FreeDOS 1.3 RC3, 2021. Don't bother trying it in DOSBOX or DosEMU - Their ancient version of COMMAND.COM does not have the DIR switches needed.
 
@@ -20,7 +20,7 @@ and will display up to 128 of them to read in the AMB reader program.
 
 ![amb2](ambrary2.png)
 
-###Usage:
+### Usage:
 
 If you keep your .AMB files elsewhere, you can start Ambrary with a parameter indicating that. e.g.
 ~~~~
