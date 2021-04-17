@@ -19,7 +19,7 @@ DECLARE SUB SaveFile ()
 '$STATIC
 
 'Global string variables
-COMMON SHARED tempdir$, tempfile$, dbfile$, ambdrive$
+COMMON SHARED tempdir$, tempfile$, ambdrive$
 'Global arrays
 COMMON SHARED filename$(), title$()
 'Global numeric variables
@@ -31,7 +31,6 @@ IF INSTR(COMMAND$, "E:") THEN ambdrive$ = "E:"
 IF INSTR(COMMAND$, "F:") THEN ambdrive$ = "F:"
 tempdir$ = ENVIRON$("TEMP")
 tempfile$ = tempdir$ + "\ambrary.lst"
-dbfile$ = "C:\FDOS\DOC\AMBRARY\AMBFILE.DB"
 AmbScan     'any way to speed this up?
 FillArrays  'feed temp file into array
 SaveFile    'save results to a file
@@ -76,7 +75,7 @@ SUB FillArrays
             f = f + 1
         LOOP UNTIL EOF(tmp1%)
     CLOSE #tmp1%
-    'DIM arrays  
+    'DIM arrays 
     DIM filename$(f)
     DIM title$(f)
     tmp1% = FREEFILE

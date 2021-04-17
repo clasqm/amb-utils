@@ -48,6 +48,8 @@ A helper program for AMBRARY. Written in QuickBASIC 4.5 for FreeDOS 1.3 RC3,
 
 The command AMBTITLE, with no further parameters, will scan your C drive and extract the title of each book found. This information will be stored in a file that AMBRARY 0.2 or higher can read. AMBRARY will then display the title rather than the filename.
 
+![ambrary3](ambrary3.png)
+
 If you keep your .AMB files elsewhere, you can start AMBTITLE with a parameter indicating that, just like AMBRARY.
 
 You only need to run this utility when you have added new AMB books to your collection or remove them. The whole process is a bit slow, so I have not incorporated this into AMBRARY itself.  
