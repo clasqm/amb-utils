@@ -57,3 +57,9 @@ You only need to run this utility when you have added new AMB books to your coll
 AMBTITLE requires DELTREE, the AMBPACK utility and at least one AMB file to be installed.
 
 --------------------------------------------------------
+
+## AMB e-books
+
+The AMB directory contains a few e-books I have created in AMB format, mainly for my own purposes and so that I can get a handle on this format. Right now, I can't say how far this library will grow.
+
+I will only include AMB files in languages I actually know, but if you'd like to see your AMB file in Tagalog, Serbo-Croation or Guarani listed here, [email them to me](mailto:clasqm@gmail.com) and we'll see what we can do.
