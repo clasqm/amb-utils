@@ -32,13 +32,13 @@ You can also increase the number of books listed.
 ~~~~
 AMBRARY 256
 ~~~~
-Accepted values are 256, 512 and 1024. Again, the highest number given is used. If AMB ever takes off to the extent that you need more space than that, you will probably need a more sophisticated launcher program.
+Accepted values are 256, 512 and 1024. Again, the highest number given is used. If AMB ever takes off to the extent that you need to access more ebooks than that, you will probably need a more sophisticated launcher program.
 
 Parameters may be given in any order. AMBRARY D: 512 and AMBRARY 512 D: work exactly the same.
 
 AMBRARY /D: or AMBRARY --1024 or AMBRARY -F: /256 will all work, since these traditional parameter indicators are ignored.
 
-AMBRARY /? or AMBRARY --HELP provides onscreen help.
+AMBRARY /? or AMBRARY --HELP provides further onscreen help for newer parameters.
 
 --------------------------------------------------------
 
@@ -52,9 +52,16 @@ The command AMBTITLE, with no further parameters, will scan your C drive and ext
 
 If you keep your .AMB files elsewhere, you can start AMBTITLE with a parameter indicating that, just like AMBRARY.
 
-You only need to run this utility when you have added new AMB books to your collection or remove them. The whole process is a bit slow, so I have not incorporated this into AMBRARY itself.  
+You only need to run this utility when you have added new AMB books to your collection or remove them. The whole process is a bit slow, so I have not incorporated this into AMBRARY itself.
 
 AMBTITLE requires DELTREE, the AMBPACK utility and at least one AMB file to be installed.
+
+--------------------------------------------------------
+## Scripts
+
+Some Bash scripts that I worked out to create .amb files. Yes, although FreeDOS is likely to be the main platform for .amb ebooks, I prefer to create mine on Linux. Sue me.
+
+These are for my own purposes. They are full of hard-coded paths and don't pretend to be universal solutions. But perhaps they can help someone work out their own workflow.
 
 --------------------------------------------------------
 
@@ -62,4 +69,5 @@ AMBTITLE requires DELTREE, the AMBPACK utility and at least one AMB file to be i
 
 The AMB directory contains a few e-books I have created in AMB format, mainly for my own purposes and so that I can get a handle on this format. Right now, I can't say how far this library will grow.
 
-I will only include AMB files in languages I actually know, but if you'd like to see your AMB file in Tagalog, Serbo-Croation or Guarani listed here, [email them to me](mailto:clasqm@gmail.com) and we'll see what we can do.
+I will only include AMB files in languages I actually know, but if you'd like to see your AMB file in Tagalog, Serbo-Croatian or Guarani listed here, [email them to me](mailto:clasqm@gmail.com) and we'll see what we can do.
+
