@@ -1,6 +1,6 @@
 # amb-utils
 
-Small FreeDOS utilities for Mateusz Viste's AMB ([Ancient Machine Book](http://amb.osdn.io/)) e-book format.
+Small FreeDOS utilities for Mateusz Viste's .AMB ([Ancient Machine Book](http://amb.osdn.io/)) e-book format.
 
 [![wtf](wtfpl-badge-1.png)](http://www.wtfpl.net/)
 
