@@ -1,0 +1,33 @@
+#!/usr/local/bin/yabasic
+#
+# Rip a text file with a recognizable chapter structure (eg CHAPTER 1,
+# CHAPTER 2 etc.) into a series of ama files for further editing.
+#
+# Try to massage the file, removing any forewords, appendices et
+# into their own ama files, leaving only the structured bit.
+#
+# index.ama and title must already exist.
+#
+#  
+input "filename?   " fn$
+print 
+input "Pattern that starts a new AMA?  " pattern$
+rsize=len(pattern$)
+open fn$ for reading as #1
+open #3, "index.ama", "a" 
+open "title" for reading as #2 // just to prevent an error message
+counter=0
+while not(eof(1))
+	line input #1 a$
+	if left$(a$, rsize) = pattern$ then
+		close #2
+		counter=counter+1
+		open "ch" + str$(counter) + ".ama" for writing as #2
+		print #3, "%lch" + str$(counter) + ".ama:" + a$
+	endif
+	print #2, a$
+wend
+close #1
+close #2
+close #3
+
