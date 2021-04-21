@@ -4,7 +4,11 @@ v0.1 Initial release
 V0.2 - Will now read AMBTITLE-generated database
      - If database is present, will default to using that. Either an 
        AMBTITLE or a regular AMBRARY rescan can be forced with parameters.
-     - TODO: sort database: may need to reverse item list in v0.3.
+v0.3 - Now works with sorted AMBTITLE database.
+     - Will warn and exit if v0.1 database is detected.
 
 AMBTITLE
-v0.1 Initial release
+
+v0.1 - Initial release
+v0.2 - auto-sorts database: fields are reversed from v0.1
+
