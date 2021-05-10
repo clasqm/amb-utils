@@ -1,0 +1,80 @@
+<html>
+<head><style> table,th {border: 1px solid black; padding: 5px;}
+</style>
+</head>
+<body>
+<h1> amb-utils</h1>
+</p><p>
+Small FreeDOS utilities for Mateusz Viste's .AMB (<a href="http://amb.osdn.io/">Ancient Machine Book</a>) e-book format.
+</p><p>
+<a href="http://www.wtfpl.net/">!<a href="wtfpl-badge-1.png">wtf</a></a>
+</p><p>
+<hr />
+</p><p>
+<h2> AMBRARY</h2>
+<p>(AMB library, geddit?)<br />
+Written in QuickBASIC 4.5 for FreeDOS 1.3 RC3, 2021. Don't bother trying it in DOSBOX or DosEMU &#45 Their ancient version of COMMAND.COM does not have the DIR switches needed.</p>
+</p><p>
+Ambrary is a simple launcher menu for your .AMB files. Requires the AMB reader and at least one AMB file to be installed. Well, it wouldn't be much use otherwise, would it?
+</p><p>
+The command AMBRARY, with no further parameters, will scan your C drive for AMB files
+</p><p>
+<p><image alt=amb1 src="ambrary1.png" /></p>
+</p><p>
+and will display up to 128 of them to read in the AMB reader program.
+</p><p>
+<p><image alt=amb2 src="ambrary2.png" /></p>
+</p><p>
+<h3> Usage:</h3>
+</p><p>
+If you keep your .AMB files elsewhere, you can start Ambrary with a parameter indicating that. e.g.
+<pre><code><p style=background-color:LightGray;>
+AMBRARY D:
+</code></pre>
+E: and F: will also be accepted. If you give more than one, the highest one will be used.
+</p><p>
+You can also increase the number of books listed. 
+<pre><code><p style=background-color:LightGray;>
+AMBRARY 256
+</code></pre>
+Accepted values are 256, 512 and 1024. Again, the highest number given is used. If AMB ever takes off to the extent that you need to access more ebooks than that, you will probably need a more sophisticated launcher program.
+</p><p>
+Parameters may be given in any order. AMBRARY D: 512 and AMBRARY 512 D: work exactly the same.
+</p><p>
+AMBRARY /D: or AMBRARY <u>1024 or AMBRARY -F: /256 will all work, since these traditional parameter indicators are ignored.
+</p><p>
+AMBRARY /? or AMBRARY <u>HELP provides further onscreen help for newer parameters.
+</p><p>
+<hr />
+</p><p>
+<h2> AMBTITLE</h2>
+</p><p>
+A helper program for AMBRARY. Written in QuickBASIC 4.5 for FreeDOS 1.3 RC3,
+</p><p>
+The command AMBTITLE, with no further parameters, will scan your C drive and extract the title of each book found. This information will be stored in a file that AMBRARY 0.2 or higher can read. AMBRARY will then display the title rather than the filename. from v0.2, entries are automatically sorted by title.
+</p><p>
+<p><image alt=ambrary3 src="ambrary3.png" /></p>
+</p><p>
+If you keep your .AMB files elsewhere, you can start AMBTITLE with a parameter indicating that, just like AMBRARY.
+</p><p>
+You only need to run this utility when you have added new AMB books to your collection or remove them. The whole process is a bit slow, so I have not incorporated this into AMBRARY itself.
+</p><p>
+AMBTITLE requires DELTREE, the AMBPACK utility and at least one AMB file to be installed.
+</p><p>
+<hr />
+<h2> Scripts</h2>
+</p><p>
+Some Bash scripts that I worked out to create .amb files. Yes, although FreeDOS is likely to be the main platform for .amb ebooks, I prefer to create mine on Linux. Sue me.
+</p><p>
+These are for my own purposes. They are full of hard-coded paths and don't pretend to be universal solutions. But perhaps they can help someone work out their own workflow.
+</p><p>
+<hr />
+</p><p>
+<h2> AMB e-books</h2>
+</p><p>
+The AMB directory contains a few e-books I have created in AMB format, mainly for my own purposes and so that I can get a handle on this format. Right now, I can't say how far this library will grow.
+</p><p>
+I will only include AMB files in languages I actually know, but if you'd like to see your AMB file in Tagalog, Serbo-Croatian or Guarani listed here, <a href="mailto:clasqm@gmail.com">email them to me</a> and we'll see what we can do.
+</p><p>
+</body>
+</html>
